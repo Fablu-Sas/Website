@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fablu SAS — Mobile applications for productivity and games.">
+  <title>Fablu — Mobile applications</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Fablu home">
+      <span class="brand-mark">F</span>
+      <span>Fablu</span>
+    </a>
+    <nav>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#products" data-i18n="nav.products">Products</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+      <button id="language-toggle" class="lang-button" type="button">FR</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Independent mobile software studio</p>
+        <h1 data-i18n="hero.title">Apps made to be useful.<br><span>Games made to be fun.</span></h1>
+        <p class="hero-text" data-i18n="hero.text">
+          Fablu is a French software company creating mobile applications for iOS and Android,
+          with a focus on productivity and games.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#products" data-i18n="hero.button">Discover our first app</a>
+          <a class="button secondary" href="#contact" data-i18n="hero.contact">Contact us</a>
+        </div>
+      </div>
+      <div class="hero-orbit" aria-hidden="true">
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+        <div class="orbit-core">F</div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="about.eyebrow">About Fablu</p>
+        <h2 data-i18n="about.title">Building our own products.</h2>
+      </div>
+      <div class="about-grid">
+        <p class="large-copy" data-i18n="about.copy">
+          Fablu SAS is a French software company developing its own mobile applications.
+          We enjoy turning ideas into polished, practical experiences for phones and tablets.
+        </p>
+        <div class="feature-list">
+          <div class="feature">
+            <span>01</span>
+            <div>
+              <h3 data-i18n="about.f1.title">Mobile first</h3>
+              <p data-i18n="about.f1.text">Applications designed for iOS and Android.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <span>02</span>
+            <div>
+              <h3 data-i18n="about.f2.title">Productivity</h3>
+              <p data-i18n="about.f2.text">Tools that make everyday tasks easier to manage.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <span>03</span>
+            <div>
+              <h3 data-i18n="about.f3.title">Games</h3>
+              <p data-i18n="about.f3.text">Fun and engaging experiences built with the same care.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section products-section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="products.eyebrow">Our first product</p>
+        <h2>Lotustome</h2>
+      </div>
+
+      <article class="product-card">
+        <div class="product-icon">L</div>
+        <div class="product-content">
+          <div class="product-status" data-i18n="products.status">Coming soon</div>
+          <h3 data-i18n="products.title">Your collection. Your binders. Your decks.</h3>
+          <p data-i18n="products.description">
+            Lotustome is an offline virtual binder for managing your Magic: The Gathering collection.
+            Keep track of different versions of your cards, organize cards into multiple binders or decks,
+            and browse your collection wherever you are.
+          </p>
+          <div class="tags">
+            <span>iOS</span><span>Android</span><span>Offline</span><span>Collection</span>
+          </div>
+          <p class="product-note" data-i18n="products.scryfall">
+            Card visualization and current card data are provided through the Scryfall API.
+            Fablu is not sponsored by or affiliated with Scryfall.
+          </p>
+        </div>
+      </article>
+
+      <div class="disclaimer">
+        <strong data-i18n="products.disclaimer.title">Important</strong>
+        <p data-i18n="products.disclaimer.text">
+          Fablu does not own the artwork, names, rules text, or other intellectual property appearing
+          on Magic: The Gathering cards. These rights belong to their respective owners, including Wizards of the Coast.
+          Lotustome is an independent collection-management application and is not affiliated with or endorsed by Wizards of the Coast.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div>
+        <p class="eyebrow" data-i18n="contact.eyebrow">Get in touch</p>
+        <h2 data-i18n="contact.title">Have a question?</h2>
+        <p data-i18n="contact.text">For enquiries about Fablu or our applications, send us an email.</p>
+      </div>
+      <a class="email-link" href="mailto:fablu.sas.contact@gmail.com">fablu.sas.contact@gmail.com</a>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>Fablu SAS</strong>
+      <span data-i18n="footer.description">French mobile software company</span>
+    </div>
+    <div>
+      <span>SIREN : 108 358 979</span>
+      <a href="mailto:fablu.sas.contact@gmail.com">fablu.sas.contact@gmail.com</a>
+    </div>
+    <div class="footer-legal">
+      <a href="mentions-legales.html" data-i18n="footer.legal">Legal notice</a>
+      <span>© <span id="year"></span> Fablu SAS</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
